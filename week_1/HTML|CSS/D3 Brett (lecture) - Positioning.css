@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.box1 {
+    height: 150px;
+    width: 150px;
+    background-color: seagreen;
+    position: relative;
+    left: 10px;
+}
+
+.box2 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    position: relative;
+    left: 10px;
+}
+
+.box3 {
+    height: 150px;
+    width: 150px;
+    background-color: seagreen;
+    position: relative;
+    left: 10px;
+}

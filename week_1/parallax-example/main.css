@@ -1,0 +1,94 @@
+.header-words {
+    font-size: 3em;
+    text-align: center;
+}
+
+.parallax {
+        /* The image used */    
+    /*background-image: url("https://unsplash.it/500/?random");*/
+    
+    /* Set a specific height */
+    height: calc(100vh - 50px); 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-photo{
+    background-image: url("./img/starwarslogo.jpg");
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 55%;
+    width: 100%;
+	max-width: none;
+	position: fixed;
+	top: 0%;
+}
+
+/*this is so the the first picture after the logo shows up. The jquery is causing the first div to cover the second.*/
+.blank{
+    height: 80vh;
+    width: 100vw;
+}
+
+.photo1{
+    background-image: url("./img/lego-starwars.jpg");
+}
+.photo2{
+    background-image: url("./img/photo1.jpeg");
+}
+.photo3{
+    background-image: url("./img/lego-yoda.jpg");
+}
+.words {
+    height: 50px;
+    background-color: #ccc;
+}
+
+.cog{
+    position: absolute;
+    height: 150px;
+}
+.vader{
+    bottom: 50px;
+    left: 48%;
+}
+
+
+/*.yoda{
+    bottom: 50px;
+    left: 8%;
+}*/
+
+
+
+
+.farout {
+    background-image: url("./img/stars/far.jpg");
+    z-index: 0;
+    height: 150vh;
+    width: 100vw;
+    /*position: fixed;*/
+    /*padding-top: 6000px;*/
+    position: relative;
+}
+
+.midlayer {
+    background-image: url("./img/stars/midlayer.svg");
+    z-index: 1;
+    height: 175vh;
+    width: 100vh;
+    position: absolute;
+    top: 75vh;
+}
+.front {
+    background-image: url("./img/stars/front.svg");
+    z-index: 2;
+    height: 125vh;
+    width: 100vw;
+    position: absolute;
+    top: 400vh;
+}

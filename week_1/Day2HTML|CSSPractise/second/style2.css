@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    border: 0px;
+}
+body{
+        margin:0;
+        
+}
+
+
+.col-1{
+    height:100vh;
+    width:33.3%;
+    background-color: deepskyblue;
+    float:left;
+}
+
+.col-2 {
+    height:100vh;
+    width:33.3%;
+    background-color: lightseagreen;
+    float:left;
+
+
+}
+.col-3 {
+    height:100vh;
+    width:33.3%;
+    background-color: palegreen;
+    float:left;
+    
+    
+    
+}

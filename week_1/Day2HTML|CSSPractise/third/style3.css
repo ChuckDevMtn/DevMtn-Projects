@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    border: 0px;
+}
+body{
+        margin:0;
+        
+}
+.row-header{
+    height:122px;
+    width:100%;
+    background-color: grey;
+    padding: 20px 
+
+}
+.row-smallbox{
+    height:80px;
+    width:80px;
+    background-color: dodgerblue;
+    
+}
+.row-textbox{
+    height:250px;
+    width:100%;
+    background-color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 40px 10px;
+}
+
+.row-1{
+    height:150px;
+    width:100%;
+    background-color: deepskyblue;
+    
+}
+
+.row-2 {
+    height:150px;
+    width:100%;
+    background-color: steelblue;
+    
+
+
+}
+.row-3 {
+    height:150px;
+    width:100%;
+    background-color: lightgreen;
+    
+
+}
+.row-4 {
+    height:150px;
+    width:100%;
+    background-color: yellow
+    
+
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Poppins:500');
+* {
+	list-style: none;
+}
+
+body {
+    background: url('https://github.com/DevMountain/html-css-assessment/blob/master/img/main-bg.jpeg?raw=true') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*height: 700px;*/
+}
+
+.nav-bar{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	justify-content:space-between;
+}
+
+.top-menu{
+	font-family: "Poppins";
+	font-size: 38px;
+	color: white;
+	display: flex;
+	justify-content: center;
+
+}
+
+.top-menu li {
+	margin-left: 238px;
+	margin-right: 114px;
+}
+
+li {
+	margin-left: 20px
+}
+
+
+.menu-button{
+	color: #5B7180;
+	display: flex;
+	justify-content: left;
+	margin-top: 20px;
+   margin-left: 70px;
+}
+
+.social-media-box{
+	color: #5B7180;
+	float: right;
+	display:flex;
+	margin-top: 25px;
+	margin-right: 25px;
+	padding-right:30px;
+	/*display: none;*/
+}
+
+
+.banners{
+	font-family: "Poppins";
+	color:white;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.main-banner {
+	font-family: "Poppins";
+	color:white;
+	text-align: center;
+	font-size: 200px;
+	height:285px;
+}
+
+.under-banner{
+font-family: "Poppins";
+font-size: 30px;
+color:white;
+text-align: center;
+
+}
+
+.down-arrow{
+	color:white;
+	margin: 0;
+	margin-top: 50px;
+	text-align: center;
+}
+
+@media (max-width:768px) {
+    .menu-button{
+        display: inline-flex;
+	 }
+
+	 .social-media-box{
+		 display: unset;
+		 display: flex;
+		 float: right;
+		 margin-left: 20px;
+	 }
+
+	 .top-menu {
+		 display: none;
+	 }
+
+
+
+}*/
