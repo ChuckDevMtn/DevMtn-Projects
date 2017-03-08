@@ -85,11 +85,12 @@ var myUser = {
  email: 'iliketurtles@gmail.com'
 };
 
-var getMyUsername = function() {
+var getMyUsername = function(obj) {
  return this.username;
 };
 
-var userName = getMyUsername(); //Fix this
+var userName = getMyUserName(myUser)
+//Fix this
 
 //Above you're given an object, and  a function. What will the getMyUsername function return?
 //Note(no tests)
