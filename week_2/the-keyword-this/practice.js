@@ -83,14 +83,12 @@ var myUser = {
  username: 'iliketurtles',
  age: 13,
  email: 'iliketurtles@gmail.com'
-};
 
-var getMyUsername = function(obj) {
- return this.username;
 };
+var getMyUsername = function() {
+ return this.username;}
 
-var userName = getMyUserName(myUser)
-//Fix this
+var userName = getMyUsername.call(myUser) //Fix this
 
 //Above you're given an object, and  a function. What will the getMyUsername function return?
 //Note(no tests)
