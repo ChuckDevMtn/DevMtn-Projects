@@ -1,22 +1,22 @@
-<html ng-app="arrayApp">
+<html ng-app="App2">
 	<head>
 		<link rel="stylesheet" href="style.css"></link>
 	</head>
 	<body ng-controller="arrayController">
 		<div class="data">
 			<ul ng-repeat="item in newData">
-				<li>{{item.name}}</li>
-				<li>{{item.email}}</li>
-				<li>{{item.dateEmployed}}</li>
-				<li>{{item.phone}}</li>
+				<li>{{myData.name}}</li>
+				<li>{{myData.email}}</li>
+				<li>{{myData.dateEmployed}}</li>
+				<li>{{myData.phone}}</li>
 			</ul>
 		</div>
 
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+		<script src="app2.js"></script>
+		<script src="controller2.js"></script>
+		<script src="service2.js"></script>
 	</body>
 </html>

@@ -1,1 +1,1 @@
-angular.module('App1', [])
+angular.module('App2', [])
