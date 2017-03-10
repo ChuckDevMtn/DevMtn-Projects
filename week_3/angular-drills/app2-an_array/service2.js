@@ -1,4 +1,4 @@
-angular.module('app2').service('myService', function(){
+angular.module('App2').service('myService', function(){
 
 var myNumbers = [1,2,3,4,5,6,7,8,9,10];
 

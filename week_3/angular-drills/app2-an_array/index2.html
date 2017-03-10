@@ -4,11 +4,11 @@
 	</head>
 	<body ng-controller="arrayController">
 		<div class="data">
-			<ul ng-repeat="item in newData">
-				<li>{{myData.name}}</li>
-				<li>{{myData.email}}</li>
-				<li>{{myData.dateEmployed}}</li>
-				<li>{{myData.phone}}</li>
+			<ul ng-repeat="item in myData">
+				<li>{{item.name}}</li>
+				<li>{{item.email}}</li>
+				<li>{{item.dateEmployed}}</li>
+				<li>{{item.phone}}</li>
 			</ul>
 		</div>
 
