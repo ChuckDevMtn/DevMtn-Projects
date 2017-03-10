@@ -1,7 +1,5 @@
 angular.module('App2').service('myService', function(){
 
-var myNumbers = [1,2,3,4,5,6,7,8,9,10];
-
 
 var myData = [
 	{"name": "Aileen Jacobs", "email": "convallis.ante.lectus@euneque.co.uk", "dateEmployed": "01/01/2016", "phone": "1-862-996-4921"},
@@ -111,4 +109,4 @@ this.getData = function(){
 	return myData;
 }
 
-})
+});
