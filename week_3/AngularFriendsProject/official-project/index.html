@@ -34,18 +34,18 @@
 
 
     <ul>
-      <li ng-repeat= "friend in friends | filter: searchTerm | orderBy: sortDirection + sortProp ">
+      <li ng-repeat= "people in friends | filter: searchTerm | orderBy: sortDirection + sortProp ">
 
-        <img class="profile-pic" ng-src='{{friend.pic_square}}'>
-        <h3>{{friend.name}}</h3>
+        <img class="profile-pic" ng-src='{{people.pic_square}}'>
+        <h3>{{people.name}}</h3>
         <div class="location">
-          Location: {{friend.location.city}}, {{friend.location.state}},{{friend.location.country}}
+          Location: {{people.location.city}}, {{people.location.state}},{{people.location.country}}
         </div>
         <div class="status">
-          Status: {{friend.status}}
+          Status: {{people.status}}
         </div>
-        <div class="num-friends">
-          Friends: {{friend.friend_count}}
+        <div class="num-peoples">
+          Friends: {{people.friend_count}}
         </div>
       </li>
     </ul>

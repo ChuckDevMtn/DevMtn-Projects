@@ -6,7 +6,7 @@ $scope.sortDirection;
 
 
 
-$scope.nothing = "i will delete later"
+
 $scope.friends = [{
     name: 'Preston McNeil',
     pic_square: 'http://free-profile-pics.com/profile-pictures/01232014/images/albert-einstein-profile-picture-133x133.PNG',
