@@ -1,0 +1,22 @@
+<html ng-app="App2">
+	<head>
+		<link rel="stylesheet" href="style2.css"></link>
+	</head>
+	<body ng-controller="Controller2">
+		<div class="data">
+			<ul ng-repeat="item in newData">
+				<li>{{item.name}}</li>
+				<li>{{item.email}}</li>
+				<li>{{item.dateEmployed}}</li>
+				<li>{{item.phone}}</li>
+			</ul>
+		</div>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="app2.js"></script>
+		<script src="Controller2.js"></script>
+		<script src="service2.js"></script>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="firstApp">
+
+  <head>
+    <script data-require="angularjs@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="mainCtrl">
+    <h3>A lot together</h3>
+    <input ng-model="newFood"/>
+    <button ng-click="foods.push(newFood)">Add</button>
+
+    <div ng-repeat="food in foods">
+      {{food}}
+    </div>
+
+
+    <h3>Show/Hide - ng-show & ng-hide</h3>
+
+    <div ng-show="isAwesome">You are awesome</div>
+
+    <div ng-hide="isAwesome">You are not awesome</div>
+
+    <div ng-if="isAdmin">You are an admin</div>
+
+    <h3>Events - ng-click</h3>
+
+    <button ng-click="isAwesome = !isAwesome">Toggle Awesome</button>
+    <button ng-click="toggleClick()">Toggle Awesome with function</button>
+
+    <h3>One-way binding - Double mustache</h3>
+    {{ test }}
+
+    <h3>Two-way binding - ng-model</h3>
+
+    <input ng-model="twoWay"/>
+
+    {{ twoWay }}
+
+
+    <h3>Lists - ng-repeat</h3>
+
+    <ul>
+      <li ng-repeat="c in comics">
+          {{ "Comic : " + c.toUpperCase() }}
+      </li>
+    </ul>
+<!-- /////////////////////////////////////////////////////////////////////// -->
+    <h3>Filter - ng-repeat</h3>
+
+    <input ng-model="comicFilter"/>
+
+    <ul>
+      <li ng-repeat="c in comics | filter: comicFilter">
+          {{ "Comic : " + c.toUpperCase() }}
+      </li>
+    </ul>
+<!-- /////////////////////////////////////////////////////////////////////// -->
+    <h3>Advanced Filter - ng-repeat</h3>
+
+    Title: <input ng-model="movieFilter.title"/>
+    <br/>
+    Year: <input ng-model="movieFilter.year"/>
+
+    <ul>
+      <li ng-repeat="m in movies | filter: movieFilter">
+          {{ m.title.toUpperCase() }} - ( {{m.year}} ) :: <strong>{{m.stars}}</strong>
+      </li>
+    </ul>
+
+  </body>
+
+</html>
