@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "FriendsApp">
 <head>
   <title>Angular Friends</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-  <h1>The <strong>facebook</strong> Friend Machine</h1>
+<body ng-controller = "FriendsCtrl">
+
+
+
+  <h1>The <strong>Facebook</strong> Friend Machine</h1>
 
   <div class="friends">
     <form class="form-inline searchForm" role="form">
       <div class="form-group">
-        <input class="form-control" placeholder="Search Anything About Your Friends">
 
-        <select class="input-medium">
-          <option>Name</option>
-          <option>#Friends</option>
-          <option>City</option>
-          <option>State</option>
-          <option>Country</option>
+			<input class="form-control" placeholder="Search Anything About Your Friends" ng-model = "friendFilter">
+
+
+
+		  <select class="input-medium" ng-model = "sortProp">
+          <option value = "friend.name">Name</option>
+          <option value = "friend.friend_count">#Friends</option>
+          <option value = "friend.city">City</option>
+          <option value = "friend.state">State</option>
+          <option value = "friend.country">Country</option>
         </select>
 
-        <select class="input-medium">
+        <select class="input-medium" ng-model = "sortDirection">
           <option value="-">Descending</option>
           <option value="+">Ascending</option>
         </select>
       </div>
     </form>
 
-    <ul>
+    <ul ng-repeat = "friend in AllFriends  |  filter: friendFilter | orderBy: sortProp + sortDirection" >
+
+
       <li class='friend'>
-        <img class="profile-pic" src='http://placebear.com/50/50.jpg'>
-        <h3>Cali Fornia</h3>
+        <img class="profile-pic" ng-src='{{friend.pic_square}}'>
+        <h3>{{friend.name}}</h3>
         <div class="location">
-          Location: New Port Beach, California, United States
+          Location: {{friend.location.city}}, 							{{friend.location.state}} ,
+			 {{friend.location.country}}
         </div>
         <div class="status">
-          Status: I hate the snow. I wish I was on the beach right now!!!
+          Status: {{friend.status}}
         </div>
         <div class="num-friends">
-          Friends: 1,367
+          Friends: {{friend.friend_count}}
         </div>
       </li>
     </ul>
@@ -49,5 +58,9 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- your scripts here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+  <script src="./FriendsApp.js"></script>
+  <script src="./FriendsCtrl.js"></script>
+
 </body>
 </html>
